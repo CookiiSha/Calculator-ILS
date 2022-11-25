@@ -1,0 +1,106 @@
+* {
+  font-family: coffee;
+  box-sizing: border-box;
+
+}
+/*
+      DESIGN INSPIRED FROM: https://codepen.io/arcsbstn/pen/XWEwJVQ
+*/
+
+@font-face {
+  font-family: coffee;
+  src: url(Fonts/VarelaRound-Regular.ttf);
+}
+body {
+  background-color: var(--bg);
+}
+
+.calculator {
+  width: 450px;
+  background-color: var(--color3);
+  padding: 60px 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  box-shadow: 0.6em 0.6em var(--color4);
+  -webkit-box-shadow: 0.6em 0.6em var(--color4);
+  -moz-box-shadow: 0.6em 0.60.5em var(--color4);
+}
+.display {
+  width: 100%;
+}
+.display input {
+  
+  width: 100%;
+  padding: 35px 20px;
+  text-align: right;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--color5);
+  color: var(--color3);
+  font-size: 25px;
+  box-shadow: 0.2em 0.2em var(--shading1) inset;
+  -webkit-box-shadow: 0.2em 0.2em var(--shading1) inset;
+  -moz-box-shadow: 0.2em 0.2em var(--shading1) inset;
+}
+.mrg{
+    margin-bottom:20px;
+}
+.display input::placeholder {
+  color: #9490ac;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.buttons input{
+  width: 100%;
+  padding: 15px 10px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  font-size: 35px;
+  box-shadow: 0.3em 0.3em var(--shading);
+  -webkit-box-shadow: 0.3em 0.3em var(--shading);
+  -moz-box-shadow: 0.3em 0.3em var(--shading);
+}
+.buttons input:hover{
+  translate: 0.2em 0.2em;
+  box-shadow: 0.2em 0.2em var(--shading) inset;
+  -webkit-box-shadow: 0.2em 0.2em var(--shading) inset;
+  -moz-box-shadow: 0.2em 0.2em var(--shading) inset;
+}
+.buttons input[type="button"] {
+  font-size: 20px;
+  padding: 17px;
+
+  background-color: var(--color2);
+  color: var(--color1);
+  cursor: pointer;
+  border-radius: 20px;
+}
+input[type="button"]#equals {
+  grid-column: span 2;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+input[type="button"]#clear {
+  background-color: var(--color1);
+  color: var(--color3);
+}
+:root{
+  --color1: #D1512D;
+  --color2: #F5C7A9;
+  --color3: #F5E8E4;
+  --color4: #d4406a;
+  --color5: #46273a;
+  --shading: #715667;
+  --shading1: #371329;
+  --bg:#a4d4c6;
+}
