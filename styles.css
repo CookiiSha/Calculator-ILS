@@ -70,7 +70,7 @@ body {
   -webkit-box-shadow: 0.3em 0.3em var(--shading);
   -moz-box-shadow: 0.3em 0.3em var(--shading);
 }
-.buttons input:hover{
+.buttons input:active{
   translate: 0.2em 0.2em;
   box-shadow: 0.2em 0.2em var(--shading) inset;
   -webkit-box-shadow: 0.2em 0.2em var(--shading) inset;
